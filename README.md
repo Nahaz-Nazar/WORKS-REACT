@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Welcome Card - React & Bootstrap
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a basic React web page created using React and Bootstrap.
+It displays a personalized welcome message inside a centered Bootstrap card with both internal and external images.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+* Personalized welcome message using a JavaScript variable
+* Bootstrap card with centered layout
+* Inline CSS styling for the heading
+* Internal image imported from the project folder
+* External image loaded from an online URL
+* Responsive images using Bootstrap `img-fluid`
+* Internal image fixed to 200px width
+* Styled description text using Bootstrap classes
+* Console logging using `console.log()`
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* React
+* Bootstrap
+* JavaScript
+* CSS
+* HTML
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+text
+welcome-card/
+│
+├── public/
+│
+├── src/
+│   ├── images/
+│   │   └── welcome.jpg
+│   │
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+│
+├── package.json
+├── package-lock.json
+└── README.md
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Open the terminal in the project folder and run:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  bash
+npm.cmd install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Install Bootstrap:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+npm.cmd install bootstrap
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Run the Project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Start the React development server:
 
-## Learn More
+bash
+npm.cmd start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Then open the application in your browser:
 
-### Code Splitting
+text
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+If port 3000 is already in use, choose `Y` when React asks to run the app on another port.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Output
 
-### Making a Progressive Web App
+The page displays:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+text
+Welcome to React Learning, Nahaz
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+along with:
 
-### Deployment
+* One internal/local image
+* One external/online image
+* A short description below the images
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Console
 
-### `npm run build` fails to minify
+The application also logs:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+text
+React app started
+
+in the browser developer console.
+
+## Author
+
+Nahaz
