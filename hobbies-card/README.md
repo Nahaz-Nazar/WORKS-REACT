@@ -1,70 +1,159 @@
-# Getting Started with Create React App
+# Personal Information and Hobbies - React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple React application that displays personal information and favorite hobbies.
 
-## Available Scripts
+It includes a Bootstrap card for personal details, two hobby lists using a `for` loop and `map()`, and an interactive button to display a message.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+* Displays personal information
+* Name stored in a variable
+* Age stored in a variable
+* Student status stored as a boolean
+* Bootstrap card used to display personal details
+* Displays three favorite hobbies
+* One hobby list is generated using a normal `for` loop
+* Another hobby list is generated using the `map()` method
+* Bootstrap-styled "Show Enthusiasm" button
+* Initial message:
+  `Click the button to see my enthusiasm!`
+* Button click changes the message to:
+  `Hello from React! I love my hobbies!`
+* Heading background color changes to `lightblue` after clicking the button
+* Uses `document.getElementById()` to update the message and heading
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* React
+* JavaScript
+* Bootstrap
+* CSS
 
-### `npm test`
+## Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+text
+hobbies-card/
+│
+├── public/
+│
+├── src/
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+│
+├── node_modules/
+├── package.json
+├── package-lock.json
+└── README.md
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Personal Information
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The application uses the following example details:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+text
+Name: Nahaz
+Age: 20
+Student: true
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Favorite Hobbies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The three favorite hobbies are:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Reading
+* Hiking
+* Coding
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The hobbies are displayed in two separate lists:
 
-## Learn More
+1. Using a normal `for` loop
+2. Using the `map()` method
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Interactive Button
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application contains a button labeled:
 
-### Code Splitting
+text
+Show Enthusiasm
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Initially, the message is:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+text
+Click the button to see my enthusiasm!
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+After clicking the button, it changes to:
 
-### Advanced Configuration
+text
+Hello from React! I love my hobbies!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+The heading background color also changes to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+text
+lightblue
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Installation
+
+Open the terminal inside the `hobbies-card` project folder.
+
+Install the project dependencies:
+
+bash
+npm install
+
+
+Install Bootstrap:
+
+bash
+npm install bootstrap
+
+
+## Run the Application
+
+Start the React development server:
+
+bash
+npm start
+
+
+If port 3000 is already in use, choose `Y` when React asks to run the application on another port.
+
+## Output
+
+The application displays:
+
+text
+Personal Information and Hobbies
+
+Personal Information
+Name: Nahaz
+Age: 20
+Student: true
+
+Favorite Hobbies - For Loop
+Reading
+Hiking
+Coding
+
+Favorite Hobbies - map()
+Reading
+Hiking
+Coding
+
+[ Show Enthusiasm ]
+
+Click the button to see my enthusiasm!
+
+
+After clicking the button:
+
+text
+Hello from React! I love my hobbies!
+
+## Author
+
+Nahaz
