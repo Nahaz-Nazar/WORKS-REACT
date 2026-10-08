@@ -1,6 +1,4 @@
-Sure 👍 You can put this in your **`README.md`** file.
 
-```
 # Light Switch React App
 
 A simple React application demonstrating **parent-child components**, **state**, and **props**.
@@ -32,11 +30,9 @@ This app has two components:
 - ESLint
 
 ## Project Structure
-```
 
 light-switch-app/ │ ├── src/ │ ├── App.jsx │ ├── Room.jsx │ ├── LightSwitch.jsx │ ├── App.css │ ├── index.css │ └── main.jsx │ ├── public/ ├── package.json ├── vite.config.js └── README.md
 
-```
 
 ## Components
 
@@ -45,27 +41,22 @@ light-switch-app/ │ ├── src/ │ ├── App.jsx │ ├── Room.js
 `Room` is the parent component.
 
 It manages the light state using React's `useState`:
-```
 
 const \[isOn, setIsOn\] = useState(false);
 
-```
 
 It displays:
 ```
 
 The room is dark
 
-```
 
 when `isOn` is `false`.
 
 It displays:
-```
 
 The room is bright
 
-```
 
 when `isOn` is `true`.
 
@@ -74,73 +65,56 @@ when `isOn` is `true`.
 `LightSwitch` is the child component.
 
 It receives two props from `Room`:
-```
 
 isOn onToggle
 
-```
 
 The button text changes depending on the value of `isOn`:
-```
 
 {isOn ? "Turn OFF" : "Turn ON"}
 
-```
 
 ## How It Works
 
 The parent component (`Room`) owns the state.
-```
 
 Room │ │ props ▼ LightSwitch │ │ click ▼ onToggle() │ ▼ Room state changes │ ▼ UI updates
 
-```
 
 ## Installation
 
 Clone or download the project.
 
 Open the project folder in a terminal:
-```
 
 cd light-switch-app
 
-```
 
 Install dependencies:
-```
 
 npm install
 
-```
 
 ## Run the Application
 
 Start the development server:
-```
 
 npm run dev
 
-```
 
 Then open the URL shown in the terminal, usually:
-```
 
 http://localhost:5173
 
-```
 
 ## Build for Production
 
 To create a production build:
-```
 
 npm run build
 
-```
 
 ## Preview Production Build
-```
 
 npm run preview
 
@@ -160,8 +134,6 @@ This project demonstrates:
 
 Save this as:
 
-```
 README.md
-```
 
 at the **root of your project**, alongside `package.json`.
