@@ -1,0 +1,25 @@
+
+.profile-container {
+  text-align: center;
+  margin: 100px auto;
+  padding: 30px;
+  max-width: 400px;
+  background-color: lightblue;
+  border: 2px solid steelblue;
+  border-radius: 12px;
+}
+
+.profile-container h1 {
+  color: darkslategray;
+  margin-bottom: 25px;
+}
+
+.profile-container button {
+  background-color: steelblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
