@@ -1,43 +1,28 @@
 # Profile Viewer
 
-## Description
-A simple React Profile Viewer application that displays a welcome message and allows the user to log in as Alice.
+Profile Viewer is a small React app that displays a welcome message and lets you change the displayed name from Guest to Alice.
 
 ## Features
-- Displays **Welcome, Guest!** when the page opens.
-- Includes a **Login as Alice** button.
-- Changes the welcome message to **Welcome, Alice!** when the button is clicked.
-- Uses the `useState()` hook to manage the username.
-- Uses the `useEffect()` hook to display a console message when the username changes.
-- Uses `useRef()` to prevent the console message from appearing on the initial render.
+- Starts with the greeting **Welcome, Guest!**.
+- The **Login as Alice** button changes the greeting to **Welcome, Alice!**. It does not perform authentication.
+- Logs a message to the browser console when the displayed name changes, but not on the initial render.
 
-## Technologies Used
-- React.js
-- JavaScript
-- CSS
-- HTML
+## Built With
+- React and JavaScript
+- CSS and HTML
 
-## Output
-**Initial Message:** Welcome, Guest!
+## Getting Started
 
-**Button:** Login as Alice
+Requires Node.js and npm.
 
-**After Clicking:** Welcome, Alice!
-
-**Browser Console:**
-```text
-User changed to Alice
-```
-
-## How to Run the Project
-1. Open the project folder in Command Prompt.
-2. Install dependencies if needed:
+1. Open a terminal in the `profile-viewer` directory.
+2. Install dependencies:
 
    ```bash
    npm install
    ```
 
-3. Start the React application:
+3. Start the development server:
 
    ```bash
    npm start
@@ -45,4 +30,26 @@ User changed to Alice
 
 4. Open `http://localhost:3000` in your browser.
 
+## Available Scripts
+
+- `npm start` runs the development server.
+- `npm test` runs the test suite.
+- `npm run build` creates a production build in `build/`.
+
 ## Project Structure
+
+```text
+profile-viewer/
+|-- public/
+|-- src/
+|   |-- App.js
+|   |-- App.css
+|   |-- index.css
+|   `-- index.js
+|-- package.json
+`-- README.md
+```
+
+## Author
+
+NAHAZ
