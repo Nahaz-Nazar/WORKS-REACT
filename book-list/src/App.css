@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background-color: #f4f6f9;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #212529;
+  font-weight: bold;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  background-color: white;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.form-control {
+  border-radius: 6px;
+}
+
+.btn {
+  border-radius: 5px;
+}
