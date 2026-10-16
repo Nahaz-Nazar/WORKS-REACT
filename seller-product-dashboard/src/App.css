@@ -1,0 +1,161 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5f9;
+  color: #222;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px 28px;
+  background: #202938;
+}
+
+.brand {
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #55d6ff;
+}
+
+.nav-email {
+  color: #dce3ed;
+  font-size: 14px;
+}
+
+.logout-button,
+.form-container button,
+.status-message button {
+  padding: 10px 16px;
+  background: #2563eb;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container {
+  width: 90%;
+  max-width: 440px;
+  margin: 40px auto;
+  padding: 26px;
+  background: white;
+  border-radius: 9px;
+  box-shadow: 0 3px 12px #00000012;
+}
+
+.form-container h2,
+.page-container h2 {
+  margin-top: 0;
+}
+
+.form-container label {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: bold;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccd2dc;
+  border-radius: 5px;
+}
+
+.form-container form button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-container button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-container a {
+  color: #2563eb;
+}
+
+.error {
+  color: #d11a2a;
+}
+
+.page-container {
+  padding: 30px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 9px;
+  box-shadow: 0 2px 9px #00000012;
+}
+
+.product-card h3 {
+  margin-top: 0;
+}
+
+.view-button {
+  display: inline-block;
+  padding: 9px 16px;
+  margin-top: 8px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.view-button:hover {
+  background: #1d4ed8;
+}
+
+.status-message {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 16px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .page-container {
+    padding: 18px;
+  }
+}
