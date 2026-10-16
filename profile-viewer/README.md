@@ -18,15 +18,11 @@ Requires Node.js and npm.
 1. Open a terminal in the `profile-viewer` directory.
 2. Install dependencies:
 
-   ```bash
    npm install
-   ```
 
 3. Start the development server:
 
-   ```bash
    npm start
-   ```
 
 4. Open `http://localhost:3000` in your browser.
 
@@ -38,7 +34,6 @@ Requires Node.js and npm.
 
 ## Project Structure
 
-```text
 profile-viewer/
 |-- public/
 |-- src/
@@ -48,7 +43,6 @@ profile-viewer/
 |   `-- index.js
 |-- package.json
 `-- README.md
-```
 
 ## Author
 
