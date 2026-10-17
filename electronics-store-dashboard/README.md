@@ -1,174 +1,91 @@
 # Electronics Store Dashboard
 
-## Project Description
-
-The Electronics Store Dashboard is a React-based web application that allows users to register, log in, and access a protected dashboard to view electronic products. The application uses Redux Toolkit for state management, React Router DOM for navigation, and Axios for API requests.
+A React application for registering and logging in, then viewing electronics products from the Mashup Stack API. This project is located in the `electronics-store-dashboard` folder of the `works-react` repository.
 
 ## Features
 
-### 1. Register Page
+- Register with a user name, email, and password.
+- Log in and keep the email and authentication token in Redux state.
+- View products on a dashboard available to authenticated users.
+- Log out to clear the authentication and product state.
+- Show loading, empty, and error states for product requests.
 
-- Name field
-- Email field
-- Password field
-- Confirm Password field
-- Required field validation
-- Password and Confirm Password matching validation
-- User registration using an API
-- Registration success and error messages
+## Tech stack
 
-### 2. Login Page
-
-- Email and password fields
-- Required field validation
-- User login using an API
-- Authentication state management
-- Redirect to the dashboard after successful login
-- Error handling for invalid login credentials
-
-### 3. Electronics Store Dashboard
-
-- Protected dashboard access
-- Display electronic products
-- Fetch product data using API requests
-- Manage product data using Redux Toolkit
-- Redirect unauthenticated users to the Login page
-
-### 4. Authentication
-
-- Manage authentication using Redux Toolkit
-- Store user email and authentication token in Redux state
-- Protect dashboard routes
-- Logout functionality
-- Restrict dashboard access after logout
-
-## Technologies Used
-
-- React.js
-- JavaScript
-- HTML5
-- CSS3
+- React and React Router
+- Redux Toolkit and React Redux
 - Axios
-- Redux Toolkit
-- React Redux
-- React Router DOM
-- REST API
+- CSS
 
-## Project Structure
+## API
+
+The app uses `https://worksheet-product.mashupstack.com`:
+
+| Method | Endpoint | Purpose |
+| --- | --- | --- |
+| `POST` | `/register` | Register an account |
+| `POST` | `/login` | Log in and receive an authentication token |
+| `GET` | `/product` | Load the product list |
+
+## Run locally
+
+From the `works-react` repository root, open a terminal and run:
+
+```bash
+cd electronics-store-dashboard
+npm install
+npm start
+```
+
+The development server normally opens at [http://localhost:3000](http://localhost:3000). If it reports a different port, use the URL shown in the terminal.
+
+## Available scripts
+
+Run these commands from the `electronics-store-dashboard` folder:
+
+```bash
+npm start
+npm test
+npm run build
+```
+
+## Routes
+
+| Route | Description |
+| --- | --- |
+| `/register` | Create an account |
+| `/login` | Log in |
+| `/products` | View products; redirects to login when unauthenticated |
+| `/` | Redirects to `/products` when logged in, otherwise to `/login` |
+
+## Project structure
 
 ```text
 electronics-store-dashboard/
 ├── public/
 ├── src/
+│   ├── app/
+│   │   └── store.js
 │   ├── features/
 │   │   ├── auth/
 │   │   │   └── authSlice.js
 │   │   └── products/
 │   │       └── productSlice.js
 │   ├── App.js
+│   ├── App.css
 │   ├── Login.js
-│   ├── Register.js
 │   ├── Navbar.js
-│   ├── store.js
-│   ├── index.js
-│   └── App.css
+│   ├── ProductList.js
+│   ├── Register.js
+│   └── index.js
 ├── package.json
 └── README.md
 ```
 
-*Note: The file structure should match the actual files in the project.*
+## Product information
 
-## API Endpoints
-
-### Registration API
-
-**Method:** POST
-
-```text
-https://worksheet-auth.mashupstack.com/register
-```
-
-### Login API
-
-**Method:** POST
-
-```text
-https://worksheet-auth.mashupstack.com/login
-```
-
-### Product API
-
-The application uses Axios to fetch electronic product data from the product API configured in the project.
-
-## Installation and Setup
-
-### Step 1: Open the Project Folder
-
-Open Command Prompt or the VS Code terminal and execute:
-
-```bat
-cd /d D:\REACT-Node.js\electronics-store-dashboard
-```
-
-### Step 2: Install Dependencies
-
-```bash
-npm install
-```
-
-### Step 3: Start the Application
-
-```bash
-npm start
-```
-
-### Step 4: Open the Application
-
-Open the following URL in your browser:
-
-```text
-http://localhost:3000
-```
-
-If the terminal displays a different port, use the URL shown in the terminal.
-
-## Testing Checklist
-
-### Registration Tests
-
-- [ ] Register a new user with valid details.
-- [ ] Verify required field validation.
-- [ ] Verify password and confirm password matching.
-- [ ] Verify successful registration.
-- [ ] Verify registration error handling.
-
-### Login Tests
-
-- [ ] Log in with valid credentials.
-- [ ] Verify invalid login credentials display an error.
-- [ ] Verify successful login redirects to the dashboard.
-
-### Dashboard Tests
-
-- [ ] Verify unauthenticated users cannot access the dashboard.
-- [ ] Verify authenticated users can access the dashboard.
-- [ ] Verify electronic products are displayed.
-- [ ] Verify product data is stored in Redux Toolkit state.
-- [ ] Verify product API errors are handled appropriately.
-
-### Logout Tests
-
-- [ ] Verify the logout button works correctly.
-- [ ] Verify logout clears authentication state.
-- [ ] Verify the user is redirected to the Login page.
-- [ ] Verify dashboard access is blocked after logout.
-
-## Expected Output
-
-The application should display the Register and Login pages. Users should be able to register and log in using valid credentials. After successful authentication, users should be able to access the protected Electronics Store Dashboard and view available electronic products.
-
-Unauthenticated users should be redirected to the Login page. After logout, users should no longer be able to access the protected dashboard.
+The dashboard displays each product's ID, name, description, price, and quantity when those values are returned by the API.
 
 ## Author
 
-**JESIFAR**
+NAHAZ
