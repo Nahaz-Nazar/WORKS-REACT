@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #222;
+}
+
+.navbar {
+  background: #202b3c;
+  color: white;
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover,
+.brand:hover {
+  color: #62d4ff;
+}
+
+.nav-links button,
+.form-container button,
+.logout-button {
+  background: #1769aa;
+  color: white;
+  padding: 11px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-links button:hover,
+.form-container button:hover,
+.logout-button:hover {
+  background: #125486;
+}
+
+.form-container {
+  max-width: 430px;
+  margin: 40px auto;
+  padding: 28px;
+  background: white;
+  border-radius: 9px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.form-container label {
+  display: block;
+  margin: 16px 0 7px;
+  font-weight: bold;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.form-container button {
+  width: 100%;
+  margin-top: 22px;
+  font-size: 15px;
+}
+
+.form-container button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-container p {
+  line-height: 1.5;
+}
+
+.error {
+  padding: 12px;
+  background: #ffe5e5;
+  color: #b00020;
+  border-radius: 5px;
+}
+
+.student-container {
+  max-width: 1000px;
+  margin: 35px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 9px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.student-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.student-header h1 {
+  margin: 0 0 8px;
+}
+
+.student-header p {
+  margin: 0;
+  color: #555;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 14px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background: #202b3c;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background: #f5f7fa;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 15px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .form-container,
+  .student-container {
+    margin: 20px 12px;
+    padding: 18px;
+  }
+
+  .student-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
