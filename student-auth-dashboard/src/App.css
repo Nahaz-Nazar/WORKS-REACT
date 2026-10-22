@@ -1,0 +1,189 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fb;
+  color: #222;
+}
+
+.navbar {
+  background: #1e293b;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.brand {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a:hover {
+  color: #93c5fd;
+}
+
+.form-container {
+  width: 90%;
+  max-width: 420px;
+  margin: 45px auto;
+  padding: 28px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.form-container label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: bold;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.form-container input:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #2563eb;
+}
+
+button {
+  cursor: pointer;
+}
+
+.form-container button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+}
+
+.form-container button:hover {
+  background: #1d4ed8;
+}
+
+.form-container button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-container p {
+  line-height: 1.5;
+}
+
+.error {
+  padding: 12px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 5px;
+}
+
+.student-container {
+  width: 92%;
+  max-width: 1000px;
+  margin: 35px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.student-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.student-header h1 {
+  margin-top: 0;
+}
+
+.student-header p {
+  color: #64748b;
+}
+
+.student-header button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 11px 18px;
+}
+
+.student-header button:hover {
+  background: #b91c1c;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: left;
+  border: 1px solid #e2e8f0;
+}
+
+th {
+  background: #1e293b;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 15px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .student-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .student-container {
+    padding: 16px;
+  }
+}
